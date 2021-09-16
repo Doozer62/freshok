@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,101 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-top">
+        <div class="container">
+            <div class="header__inner">
+                <div class="left-side">
+                <span class="delivery">адрес и время доставки</span>
+                <span class="hotline">горячая линия 24/7</span>
+            </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">доставка</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">о нас</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">новости</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+
+        <div class="container">
+
+            <div class="header-bottom__inner">                   
+            <img class="logo__img" src="images/logo.png" alt="Логотип">
+
+            <nav class="dropdown">
+                <ul class="dropdown__list">
+                    <li class="dropdown__links"><a class="dropdown__title-link" href="#">Каталог продукции</a>
+            
+                        <!-- первый уровень выпадающего списка -->
+                        <ul class="dropdown__items">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Овощи и фрукты</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Бакалея</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Молочные продукты</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Хлеб</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Мясо</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Колбаса</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Рыба</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Алкоголь</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Напитки</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Торты</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Мясо</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Чай, кофе</a></li>
+                        </ul>
+            
+                    </li>
+                </ul>
+        </nav>
+
+        
+
+        <div class="search">
+            <svg style="display: none;">
+            
+                <symbol id="icon-search" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                
+                <path id="icon-search" d="M9.02081 16.4718C4.47604 16.4718 0.778625 12.7772 0.778625 8.23588C0.778625 3.69459 4.47604 0 9.02081 0C13.5656 0 17.263 3.69459 17.263 8.23588C17.263 12.7772 13.5656 16.4718 9.02081 16.4718ZM9.02081 1.5613C5.33761 1.5613 2.34112 4.5555 2.34112 8.23588C2.34112 11.9163 5.33761 14.9105 9.02081 14.9105C12.704 14.9105 15.7005 11.9163 15.7005 8.23588C15.7005 4.5555 12.704 1.5613 9.02081 1.5613ZM20.5498 19.7713C20.8549 19.4665 20.8549 18.9722 20.5498 18.6673L17.0537 15.1739C16.7486 14.869 16.2539 14.869 15.9488 15.1739C15.6438 15.4788 15.6438 15.9731 15.9488 16.2779L19.4449 19.7713C19.5975 19.9238 19.7974 20 19.9974 20C20.1974 20 20.3972 19.9238 20.5498 19.7713Z" fill="#31352B"/>
+            
+                </symbol>
+            
+                </svg>
+            <form>
+                <svg class='input__icon'>
+                    <use xlink:href='#icon-search'></use>
+                </svg>
+            <input class="search__field" type="text"  placeholder="Найти в магазине ...">
+            
+            <button class="search__btn" type="submit">поиск</button>
+            </form>
+        </div>
+
+        <div class="user-nav">
+            <a href="#" class="user-nav__link">
+                <img class="user-nav__link-img" src="images/icons/icon-user.svg" alt="">
+            </a>
+            <a href="#" class="user-nav__link">
+                <img class="user-nav__link-img" src="images/icons/icon-heart.svg" alt="">
+                <div class="user-nav__num">12</div>
+            </a>
+            <a href="#" class="user-nav__link">
+                <img class="user-nav__link-img" src="images/icons/icon-cart.svg" alt="">
+                <div class="user-nav__num">12</div>
+            </a>
+        </div>
+        </div>
+        
+    </div>
+    </header>
 
     <script src="js/main.js"></script>
 </body>
