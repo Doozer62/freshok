@@ -1,8 +1,11 @@
 $(function(){
  
+  var mixer = mixitup('.container-filter');
+
 $('.top-slider__inner').slick({
 
 });
+
 
 });
 

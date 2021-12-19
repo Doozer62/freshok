@@ -206,7 +206,6 @@
     position: relative;
 }
 
-
 .search {
     position: relative;
 
@@ -357,7 +356,6 @@ footer {
 
 .contacts {
     margin-top: 90px;
-
 }
 
 .contact {
@@ -471,6 +469,8 @@ footer {
     &__icon-heart {
         fill: #c1c1c1;
         cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__top {
@@ -479,14 +479,23 @@ footer {
         padding: 12px 12px 7px;
     }
 
+    &__top-icon {
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px 12px 7px;
+    }
+
     &__left-top {
        display: inline-flex;
        flex-direction: column;
+       font-weight: bold;
+       font-size: 10px;
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       line-height: 10px;
     }
 
     &__new {
-        text-transform: uppercase;
-        font-weight: bold;
         font-size: 10px;
         padding: 3px 6px;
         color: #fff;
@@ -501,10 +510,35 @@ footer {
         background-color: #CF3E3B;
         border-radius: 6px;
         margin-top: 6px;
+
+    }
+
+    &__hit {
+        padding: 9px 6px;
+        background-color: #FF7A00;
+        border-radius: 6px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 10px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__content-box {
+       
     }
 
     &__name {
-        padding: 18px 18px 50px 18px;
+        flex: 1;
+        margin: 18px 18px 50px 18px;
+        // margin-bottom: 10px;
         letter-spacing: 0.03em;
         font-weight: 600;
     }
@@ -513,6 +547,10 @@ footer {
         padding: 0 20px 18px;
         display: flex;
         justify-content: space-between;
+    }
+
+    &__prices-bottom {
+        // flex-direction: column;
     }
 
     &__prices {
@@ -538,7 +576,11 @@ footer {
     &__price {
         margin-top: 3px;
         color: #505050;
-        
+    }
+
+    &__prices-bottom {
+        display: flex;
+        align-items: flex-end;
     }
 
     &__btn-cart {
@@ -547,14 +589,21 @@ footer {
         border-radius: 3px;
     }
 
-    &__icon-cart {
-
+    &__inner {
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        margin-top: 30px;
     }
+
+    &__btn-transparent {
+        @extend %btn-transparent;
+    }
+
 }
 
-// .product svg {
-//     fill: #c1c1c1;
-// }
 
 .bottom-content {
     padding: 49px 0;

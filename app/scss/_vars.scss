@@ -27,3 +27,12 @@ $bgfooter: #31352B;
     border-radius: 6px;
     @extend %lato-400;
 }
+
+%btn-transparent {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #63A60E;
+    border: 1px solid #63A60E;
+    border-radius: 6px;
+    @extend %lato-400;
+}
