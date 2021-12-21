@@ -322,7 +322,6 @@ footer {
     }
 }
 
-
 .subscribe {
     margin-top: 18px;
 
@@ -457,6 +456,30 @@ footer {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.categories {
+    padding: 72px 0;
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 32px;
+    }
+
+    &__filter-btn {
+        text-align: center;
+    }
+
+    &__btn {
+        text-align: center;
+        letter-spacing: 0.03em;
+        font-size: 15px;
+        text-transform: uppercase;
+        border: none;
+        background-color: transparent;
+        margin-top: 35px;
+    }
+}
+
 .mix {
     max-width: 300px;
     max-height: 409px;
@@ -486,13 +509,13 @@ footer {
     }
 
     &__left-top {
-       display: inline-flex;
-       flex-direction: column;
-       font-weight: bold;
-       font-size: 10px;
-       letter-spacing: 0.03em;
-       text-transform: uppercase;
-       line-height: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 10px;
     }
 
     &__new {
@@ -531,10 +554,6 @@ footer {
         justify-content: space-between;
     }
 
-    &__content-box {
-       
-    }
-
     &__name {
         flex: 1;
         margin: 18px 18px 50px 18px;
@@ -547,10 +566,6 @@ footer {
         padding: 0 20px 18px;
         display: flex;
         justify-content: space-between;
-    }
-
-    &__prices-bottom {
-        // flex-direction: column;
     }
 
     &__prices {
@@ -602,11 +617,41 @@ footer {
         @extend %btn-transparent;
     }
 
+    &__btn-inner {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+    }
+
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    &__item-left {
+        background-image: url(../images/fruits1.jpg);
+        width: 630px;
+        height: 300px;
+        color: #505050;
+    }
+
+    &__item-center {
+        background-image: url(../images/fruits2.jpg);
+        width: 300px;
+    }
+
+    &__item-right {
+        background-image: url(../images/fruits3.jpg);
+        width: 300px;
+    }
+}
 
 .bottom-content {
     padding: 49px 0;
+    background-color: #F6F6F6;
+    margin-top: -3px;
 
 
     &__items {
