@@ -628,31 +628,72 @@ footer {
 .info {
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    margin-top: 72px;
+    text-transform: uppercase;
 
     &__item-left {
         background-image: url(../images/fruits1.jpg);
         width: 630px;
         height: 300px;
-        color: #505050;
+        color: #fff;
+        border-radius: 4px;
+        padding-left: 32px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
     }
 
     &__item-center {
         background-image: url(../images/fruits2.jpg);
         width: 300px;
+        padding-left: 32px;
     }
 
     &__item-right {
-        background-image: url(../images/fruits3.jpg);
+        background-image: url(../images/bread.jpg);
         width: 300px;
+        border-radius: 4px;
+        padding-left: 32px;
     }
+
+    &__item-description {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 76px;
+        letter-spacing: 0.1em;
+    }
+
+    &__item-title-left {
+        font-size: 30px;
+        line-height: 140%;
+        @extend %signika-700;
+        max-width: 391px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 18px;
+    }
+
+    &__item-title {
+        max-width: 185px;
+        font-size: 30px;
+        line-height: 140%;
+        @extend %signika-700;
+        margin-top: 18px;
+    }
+
+    &__link-inner {
+        margin-top: 12px;
+        @extend %lato-700;
+
+    }
+
+    &__item-link {
+        border-bottom: 2px solid;
+    }
+
 }
 
 .bottom-content {
     padding: 49px 0;
     background-color: #F6F6F6;
     margin-top: -3px;
-
 
     &__items {
         display: flex;
@@ -675,12 +716,10 @@ footer {
     &__item-title {
         font-size: 16px;
         @extend %lato-700;
-
     }
 
     &__item-content {
         color: #505050;
-
     }
 
     &__icon {
